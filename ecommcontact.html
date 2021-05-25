@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - PinkVanity | Ecommerce website design</title>
+    <link rel="stylesheet" href="ecommerce.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                     <img src="images/cosmetics-156060_640.png" alt="" width="125px">
+                </div>
+             
+                <nav>
+                    <ul id="menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <!-- <li><a href="#">About</a></li> -->
+                        <li><a href="#">Contact</a></li>
+                        <!-- <li><a href="#">Account</a></li> -->
+                    </ul>
+                </nav>
+               
+                <div class="cart">
+
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                   
+                </div>
+                <div class="menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true"  onclick="menutoggle()"></i>
+                </div>
+            </div>
+        </div>
+        
+               
+                <!-- -------account page----- -->
+                <div class="account-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="images/smiley-24923_1280.png" width="100%">
+                            </div>
+                            <div class="col-2">
+                               <div class="form-container">
+                                   <div class="form-btn">
+                                       <span>Login</span>
+                                       <span>Register</span>
+                                       <hr id="indicator">
+                                   </div>
+                                   <form id="loginForm">
+                                       <input type="text" placeholder="Username">
+                                       <input type="password" placeholder="Password">
+                                       <button type="submit" class="btn">Login</button>
+                                       <a href="">Forgot password</a>
+                                   </form>
+                                   <form id="regForm">
+                                       <input type="text" placeholder="Username">
+                                       <input type="email" placeholder="Email">
+                                       <input type="password" placeholder="Password">
+                                       <button type="submit" class="btn">Register</button>
+                                       
+                                   </form>
+                               
+
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+              <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <img src="images/" >
+                            <p>Our purpose is to sustainably make the pleasure and benefits of body products accesible to many.</p>
+                            <div class="app-logo">
+                                <img src="images/play2.png">
+                                <img src="images/apple2.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <h3>Links:</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                           
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow Us:</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>You Tube</li>
+                            </ul>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            <hr>
+            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Pink Vanity</p>
+            <script>
+                var MenuItems = document.getElementById("menu-items");
+                MenuItems.style.maxHeight = "0px";
+    
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight = "0px"){
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+            </body>
+            </html>>
