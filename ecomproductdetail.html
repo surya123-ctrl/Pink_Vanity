@@ -9,21 +9,76 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    transition: transform 0.5s;
+}
+nav ul li a:hover{
+    border-top: 2px solid rgb(250, 167, 14);
+    border-bottom: 2px solid rgb(250, 167, 14);
+    color: rgb(250, 167, 14); 
+}
+.navbar .cart{
+    transition: transform 0.5s;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.navbar .cart:hover{
+    transform: translateY(-5px);
+    color: rgb(250, 167, 14);
+}
+@media only screen and (max-width: 860px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right:  0;
+        background: transparent;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    /* .navbar .cart{
+        overflow: hidden;
+        display: none;
+    } */
+    nav ul li{
+        display: block;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+   .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .cart{
+        position: absolute;
+        top: 34px;
+        right: 70px;
+    }
+}
+</style>
 <body>
     
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                     <img src="images/cosmetics-156060_640.png" alt="" width="125px">
+                    <a href="ecommerce.html">PINK VANITY</a>
                 </div>
              
                 <nav>
                     <ul id="menu-items">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Account</a></li>
+                        <li><a href="ecommerce.html">Home</a></li>
+                        <li><a href="ecommproducts.html">Products</a></li>
+                        <!-- <li><a href="#">About</a></li> -->
+                        <li><a href="index.html" target="_blank">Contact</a></li>
+                        <!-- <li><a href="#">Account</a></li> -->
                     </ul>
                 </nav>
                
